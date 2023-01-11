@@ -1,0 +1,51 @@
+<!-- Used command html:5 to create template  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word</title>
+    <!-- Internal CSS Design -->
+    <style>
+
+        h1 {
+            color: white;
+            font-family: Gotham Rounded, 'Times New Roman', Times, serif;
+            font-size: 250%;
+            /* font-weight: normal; */
+        }
+
+        p {
+            color: white;
+            font-family: Gotham Rounded, 'Times New Roman', Times, serif;
+            font-size: 250%;
+        }
+
+        #main-content {
+            /* margin: auto centers text on screen */
+            margin: auto;
+            width: 30%;
+            text-align: center;
+        }
+        body {
+            background: linear-gradient(to right, #2a2a2a, #2a2a2a);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Content div section -->
+    <div id="main-content">
+        <div>
+            <h1>Word of The Day!</h1>
+        </div>
+        <p>Word: {{ word }}</p>
+        <p>Translation: {{ translation }}</p>
+        <p>Pronunciation: {{ pronunciation}}</p>
+        <p>{{time_now}}</p>
+    </div>
+</body>
+
+</html>
